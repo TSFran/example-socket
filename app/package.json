@@ -1,0 +1,41 @@
+{
+  "name": "example-socket",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "webpack-dev-server --config ./config/webpack/config.dev.js --host '0.0.0.0' --port 8080",
+    "server": "nodemon ./server/index.js",
+    "prebuild": "rm -rf dist/*",
+    "build": "NODE_ENV=build webpack --config ./config/webpack/config.prod.js"
+  },
+  "repository": "git@github.com:TSFran/example-socket.git",
+  "author": "Luis Tupa <luis.tupa@orbis.com.pe>",
+  "license": "MIT",
+  "dependencies": {
+    "awesome-typescript-loader": "5.2.0",
+    "axios": "0.19.0",
+    "dotenv": "8.2.0",
+    "dotenv-expand": "5.1.0",
+    "express": "4.17.0",
+    "file-loader": "4.2.0",
+    "html-webpack-plugin": "3.2.0",
+    "nodemon": "1.19.0",
+    "react": "16.11.0",
+    "react-dom": "16.11.0",
+    "react-feather": "2.0.0",
+    "socket.io": "2.3.0",
+    "socket.io-client": "2.3.0",
+    "styled-components": "4.4.0",
+    "typescript": "3.7.2",
+    "webpack": "4.41.0",
+    "webpack-cli": "3.3.0",
+    "webpack-dev-server": "3.9.0",
+    "webpack-merge": "4.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "12.12.0",
+    "@types/react": "16.9.0",
+    "@types/react-dom": "16.9.0"
+  }
+}
